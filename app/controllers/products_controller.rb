@@ -18,4 +18,11 @@ class ProductsController < ApplicationController
     product = Product.find_by(name: "Zorilla Crunch")
     render json: {message: product}
   end
+
+  #query and segment both use this:
+  def single_param
+    id_number = params[:single_product]
+    product = Product.find_by(id: guess)
+    render json: {message: product}
+  end
 end
