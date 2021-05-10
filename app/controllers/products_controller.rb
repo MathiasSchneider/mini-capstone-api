@@ -3,26 +3,36 @@ class ProductsController < ApplicationController
     render json: {message: Product.all}
   end
   
-  # def keith_product_method
-  #   product = Product.find_by(name: "Keith Krunch")
-  #   render json: {message: product}
-  # end
-  # def ross_product_method
-  #   product = Product.find_by(name: "Grandpa Rossy Crunch")
-  #   render json: {message: product}
-  # end
-  # def rizzo_product_method
-  #   product = Product.find_by(name: "Rizzos")
-  #   render json: {message: product}
-  # end
-  # def zobrist_product_method
-  #   product = Product.find_by(name: "Zorilla Crunch")
-  #   render json: {message: product}
-  # end
+def create
+  product = Product.new(
+    name: params[:name],
+    price: params[:price],
+    image_url: params[:image_url],
+    description: params[:description]
+  )
+  product.save
+  render json: {message: product}
+end
 
 def show
   product = Product.find(params[:id])
   render json: {message: product}  
+end
+
+def update
+  product = Product.find(params[:id])
+  product.name = params[:name] || product.name
+  product.price = params[:price] || product.price
+  product.image_url = params[:image_url] || product.image_url
+  product.description = params[:description] || product.description
+  product.save
+  render json: {message: product}
+end
+
+def destroy
+  product = Product.find(params[:id])
+  product.destroy
+  render json: {message: "#{product.name} was successfully destroyed."}
 end
 
   #query and segment both use this:
