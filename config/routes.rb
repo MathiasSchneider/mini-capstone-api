@@ -14,4 +14,4 @@ delete "products/:id", controller: "products", action: "destroy"
 
 # #segment parameter
 # get "/segment_param/:single_product" => "products#single_param"
-# end
+end
