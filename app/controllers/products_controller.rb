@@ -35,10 +35,10 @@ def destroy
   render json: {message: "#{product.name} was successfully destroyed."}
 end
 
-  #query and segment both use this:
-  def single_param
-    id_number = params[:single_product]
-    product = Product.find_by(id: id_number)
-    render json: {message: product}
-  end
-end
+#   #query and segment both use this:
+#   def single_param
+#     id_number = params[:single_product]
+#     product = Product.find_by(id: id_number)
+#     render json: {message: product}
+#   end
+# end

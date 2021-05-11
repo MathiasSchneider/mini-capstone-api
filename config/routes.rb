@@ -9,9 +9,9 @@ patch "products/:id", controller: "products", action: "update"
 
 delete "products/:id", controller: "products", action: "destroy"
 
-#query parameter
-get "/query_param" => "products#single_param"
+# #query parameter
+# get "/query_param" => "products#single_param"
 
-#segment parameter
-get "/segment_param/:single_product" => "products#single_param"
-end
+# #segment parameter
+# get "/segment_param/:single_product" => "products#single_param"
+# end
