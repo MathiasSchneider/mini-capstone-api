@@ -10,8 +10,11 @@ def create
     image_url: params[:image_url],
     description: params[:description]
   )
-  product.save
-  render json: product
+  if product.save = true
+    render json: product
+  else
+    render json: product.errors.full_messages
+  end
 end
 
 def show
@@ -25,8 +28,11 @@ def update
   product.price = params[:price] || product.price
   product.image_url = params[:image_url] || product.image_url
   product.description = params[:description] || product.description
-  product.save
-  render json: product
+  if product.save = true
+    render json: product
+  else
+    render json: product.errors.full_messages
+  end
 end
 
 def destroy
