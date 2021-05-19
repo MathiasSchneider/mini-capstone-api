@@ -11,3 +11,7 @@
 # product = Product.create({name: "Rizzos", price: 4, image_url: "https://www.chicagotribune.com/resizer/rqOKvX6is_pBLmHFkwWfBb8zZIU=/800x1000/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2Q6YIXHWRVDHBA3IM7G3BQQN4Q.jpg", description: "Honey nut toasted oats"})
 # product = Product.create({name: "Grandpa Rossy Crunch", price: 5, image_url: "https://i5.walmartimages.com/asr/f81ca56a-0399-4e2c-99fb-777f354ef537_1.e6e5ca4d906be1d89578e9123e8f34fb.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff", description: "Frosted corn flakes"})
 # product = Product.create({name: "Zorilla Crunch", price: 6, image_url: "https://d2d8wwwkmhfcva.cloudfront.net/400x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a6e53893-7540-4b32-9d8f-221809f7bc7c.jpg", description: "Toasted oats with marshmallows"})
+
+# supplier = Supplier.create({name: "Jewel Osco", email: "JO@gmail.com", phone_number: "123-123-1234"})
+# supplier = Supplier.create({name: "Mariano's", email: "marianos@gmail.com", phone_number: "333-444-5555"})
+# supplier = Supplier.create({name: "Aldi", email: "aldi@gmail.com", phone_number: "222-222-7777"})
