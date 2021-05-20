@@ -5,6 +5,10 @@ get "/products/:id", controller: "products", action: "show"
 patch "/products/:id", controller: "products", action: "update"
 delete "/products/:id", controller: "products", action: "destroy"
 
+post "/users", controller: "users", action: "create"
+
+post "/sessions", controller: "sessions", action: "create"
+
 # #query parameter
 # get "/query_param" => "products#single_param"
 
