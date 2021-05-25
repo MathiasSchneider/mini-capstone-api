@@ -6,8 +6,11 @@ patch "/products/:id", controller: "products", action: "update"
 delete "/products/:id", controller: "products", action: "destroy"
 
 post "/users", controller: "users", action: "create"
-
 post "/sessions", controller: "sessions", action: "create"
+
+get "/orders", controller: "orders", action: "index"
+post "/orders", controller: "orders", action: "create"
+get "/orders/:id", controller: "orders", action: "show"
 
 # #query parameter
 # get "/query_param" => "products#single_param"
