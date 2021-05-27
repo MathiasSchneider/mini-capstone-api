@@ -20,3 +20,4 @@
 # image = Image.create({url: "https://www.chicagotribune.com/resizer/rqOKvX6is_pBLmHFkwWfBb8zZIU=/800x1000/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2Q6YIXHWRVDHBA3IM7G3BQQN4Q.jpg", product_id: 2})
 # image = Image.create({url: "https://i5.walmartimages.com/asr/f81ca56a-0399-4e2c-99fb-777f354ef537_1.e6e5ca4d906be1d89578e9123e8f34fb.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff", product_id: 3})
 # image = Image.create({url: "https://d2d8wwwkmhfcva.cloudfront.net/400x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a6e53893-7540-4b32-9d8f-221809f7bc7c.jpg", product_id: 4})
+
